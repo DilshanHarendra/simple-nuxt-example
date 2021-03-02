@@ -2,7 +2,7 @@
   <div class="bg-gray-100">
     <TheHeader/>
     <div class="container  mx-auto">
-      <Nuxt/>
+      <Nuxt keep-alive/>
 
     </div>
   </div>
@@ -13,7 +13,10 @@
 import TheHeader from "~/components/layout/Base/TheHeader";
 export default {
   name: "Base",
-  components: {TheHeader}
+  components: {TheHeader},
+  created() {
+    this.$axios.setHeader('Authorization', '123')
+  }
 }
 </script>
 

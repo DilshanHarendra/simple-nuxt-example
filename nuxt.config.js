@@ -17,12 +17,11 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'v-tooltip/dist/v-tooltip.css'
+
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/vue-tooltip.js',
 
   ],
 
@@ -37,7 +36,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
+
   ],
+  axios: {
+    baseURL: 'https://jsonplaceholder.typicode.com', // Used as fallback if no runtime config is provided
+  },
+
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

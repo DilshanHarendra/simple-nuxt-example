@@ -36,6 +36,12 @@
           <span>Home</span>
         </NuxtLink>
         <NuxtLink
+          to="/images"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+        >
+          <span>Images</span>
+        </NuxtLink>
+        <NuxtLink
           to="/about"
           class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
         >
@@ -46,6 +52,12 @@
           class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
         >
           <span>Users</span>
+        </NuxtLink>
+        <NuxtLink
+          to="/todos"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+        >
+          <span>Todos</span>
         </NuxtLink>
 
       </div>
